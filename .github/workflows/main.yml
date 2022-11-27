@@ -62,5 +62,5 @@ jobs:
             *.bin
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          PFX_VERSION: ${{ github.ref_name }}
+          PFX_VERSION: ${{ RELEASE_NAME }}
       
