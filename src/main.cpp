@@ -5,6 +5,7 @@
 
 #include <ArduinoOTA.h>
 
+#include "const.h"
 #include "BeatInfo.h"
 #include "settings.h"
 
@@ -25,6 +26,8 @@ void setup()
 {
 
   Serial.begin(115200);
+
+  Serial.printf("\nProjektionFX Version %s\n", getVersion());
 
   config.setupWifiPortal("ProjektionFX");
 
